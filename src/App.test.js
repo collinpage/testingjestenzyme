@@ -129,6 +129,7 @@ describe('Decrement', () => {
       button.simulate('click');
       wrapper.update();
 
+      // check if error is falsy (not in dom)
       const error = findByTestAttr(wrapper, 'decrement-error');
       expect(error.length).toBeFalsy();
     });
